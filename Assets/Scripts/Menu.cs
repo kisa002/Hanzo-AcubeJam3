@@ -37,16 +37,19 @@ public class Menu : MonoBehaviour {
 
     public void Restart()
     {
+        Time.timeScale = 1;
         Application.LoadLevel(Application.loadedLevel);
     }
 
     public void Quit()
     {
+        Time.timeScale = 1;
         Application.Quit();
     }
 
     public void GoToMain()
     {
+        Time.timeScale = 1;
         Application.LoadLevel("Main");
     }
 }
