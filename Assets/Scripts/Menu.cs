@@ -1,19 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 
     GameObject pauseMenu;
     GameObject resultMenu;
 
-	// Use this for initialization
-	void Start () {
+    private void OnLevelWasLoaded(int level)
+    {
+        if(level != 0)
+        {
+            //pauseMenu = transform.FindChild("PauseMenu").gameObject;
+            //resultMenu = transform.FindChild("ResultMenu").gameObject;
+        }
+    }
+
+    void Start () {
         pauseMenu = transform.FindChild("PauseMenu").gameObject;
         resultMenu = transform.FindChild("ResultMenu").gameObject;
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}
@@ -47,9 +55,19 @@ public class Menu : MonoBehaviour {
         Application.Quit();
     }
 
-    public void GoToMain()
+    public void LoadMain()
     {
         Time.timeScale = 1;
         Application.LoadLevel("Main");
+    }
+
+    public void GameStart()
+    {
+        Application.LoadLevel("Game");
+    }
+
+    public void LoadShop()
+    {
+        Application.LoadLevel("Shop");
     }
 }
