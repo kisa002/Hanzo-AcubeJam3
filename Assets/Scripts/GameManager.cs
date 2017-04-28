@@ -8,12 +8,18 @@ public class GameManager : MonoBehaviour {
     public int hp = 5;
     public int score = 0;
 
+    public string answer = "";
+
     private Text scoreText;
+    private Text answerText;
+
     private Menu menu;
 
 	// Use this for initialization
 	void Start () {
         scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
+        answerText = GameObject.Find("AnswerText").GetComponent<Text>();
+
         menu = GameObject.Find("Menu").GetComponent<Menu>();
 	}
 	
@@ -21,9 +27,12 @@ public class GameManager : MonoBehaviour {
 	void Update () {
         scoreText.text = score + "점";
 
+        AnswerText();
+
         ScoreUp(100);
 
         Dead();
+
 	}
 
     void Dead()
@@ -36,5 +45,10 @@ public class GameManager : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.A))
             this.score += score;
+    }
+
+    void AnswerText()
+    {
+        answerText.text = answer;
     }
 }
