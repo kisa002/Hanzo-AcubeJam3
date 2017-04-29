@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e9353766d17726645bbc264521a92010
+=======
+guid: dc18bb7b2d7739d4bbfd33e098b1924f
+>>>>>>> origin/master
 timeCreated: 1493405928
 licenseType: Free
 ShaderImporter:
