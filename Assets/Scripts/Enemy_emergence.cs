@@ -47,7 +47,6 @@ public class Enemy_emergence : MonoBehaviour
         if (transform.position.x > -1.6)
         {
             this.transform.Translate(new Vector3(-0.1f, 0, 0));
-
         }
         else if (transform.position.x <= -1.6 && check == 0)
         {

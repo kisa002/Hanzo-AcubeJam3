@@ -8,6 +8,8 @@ public class Menu : MonoBehaviour {
     GameObject pauseMenu;
     GameObject resultMenu;
 
+    GameObject black;
+
     private void OnLevelWasLoaded(int level)
     {
         if(level != 0)
@@ -20,7 +22,9 @@ public class Menu : MonoBehaviour {
     void Start () {
         pauseMenu = transform.FindChild("PauseMenu").gameObject;
         resultMenu = transform.FindChild("ResultMenu").gameObject;
-	}
+
+        black = transform.FindChild("Black").gameObject;
+    }
 	
 	void Update () {
 		
@@ -28,18 +32,23 @@ public class Menu : MonoBehaviour {
 
     public void onResult()
     {
+        black.SetActive(true);
         resultMenu.SetActive(true);
     }
 
     public void Stop()
     {
+        black.SetActive(true);
+
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
     }
 
     public void Resume()
     {
+        black.SetActive(false);
         pauseMenu.SetActive(false);
+
         Time.timeScale = 1;
     }
 
