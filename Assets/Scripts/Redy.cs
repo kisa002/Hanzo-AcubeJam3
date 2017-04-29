@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Redy : MonoBehaviour {
 
+    GameManager gameManager;
+
     GameObject enemy;
     GameObject timer;
     GameObject eventSystem;
@@ -12,12 +14,13 @@ public class Redy : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
         touchpad = GameObject.Find("Touchpad");
         enemy = GameObject.Find("Enemy");
         timer = GameObject.Find("Timer");
         eventSystem = GameObject.Find("EventSystem");
 
-        //touchpad.SetActive(false);
         eventSystem.SetActive(false);
         enemy.SetActive(false);
         timer.SetActive(false);
@@ -32,7 +35,8 @@ public class Redy : MonoBehaviour {
         enemy.SetActive(true);
         timer.SetActive(true);
         eventSystem.SetActive(true);
-        //touchpad.SetActive(true);
+
+        gameManager.isRead = false;
 
         Destroy(this.gameObject);
     }

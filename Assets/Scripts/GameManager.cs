@@ -32,7 +32,9 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         scoreText.text = score + "점";
-	}
+
+        Dead();
+    }
 
     public void ScoreUpdate()
     {
@@ -40,12 +42,12 @@ public class GameManager : MonoBehaviour {
 
         ScoreUp(100);
 
-        Dead();
+        //Dead();
     }
 
     void Dead()
     {
-        if(hp <= 0)
+        if (hp <= 0)
             menu.onResult();
     }
 
