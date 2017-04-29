@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
     public GameObject EnemyPrefab = null;
+    public GameObject EnemyPrefab2 = null;
+    public GameObject EnemyPrefab3 = null;
 
     public string answer = "";
     public string[] checkNum = new string[5];
@@ -63,6 +65,15 @@ public class GameManager : MonoBehaviour {
 
     public void EnemyCre()
     {
-        Instantiate(EnemyPrefab, new Vector2(4, 2), Quaternion.identity);
+        Instantiate(EnemyPrefab, new Vector2(4, 1.5f), Quaternion.identity);
+    }
+    public void EnemyCre2()
+    {
+        Instantiate(EnemyPrefab2, new Vector2(6, 1.5f), Quaternion.identity);
+    }
+
+    public void EnemyCre3()
+    {
+        Instantiate(EnemyPrefab3, new Vector2(8, 1.5f), Quaternion.identity);
     }
 }

@@ -1,23 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System;
+using System.Collections;
 using UnityEngine.UI;
-using System.Linq;
+using UnityEngine.SceneManagement;
 
-public class Enemy_emergence : MonoBehaviour
+public class Enemy_emergence2 : MonoBehaviour
 {
     Game_Timer GaTi;
 
     private GameObject Cube1;
     private GameObject Cube2;
     private GameObject Cube3;
-    private GameObject Cube4;
-    private GameObject Cube5;
-    private GameObject Cube6;
-    private GameObject Cube7;
-    private GameObject Cube8;
-    private GameObject Cube9;
+    GameObject Cube4;
+    GameObject Cube5;
+    GameObject Cube6;
+    GameObject Cube7;
+    GameObject Cube8;
+    GameObject Cube9;
 
     public String CheckNum;
 
@@ -39,16 +38,16 @@ public class Enemy_emergence : MonoBehaviour
         Cube8 = transform.FindChild("Cube8").gameObject;
         Cube9 = transform.FindChild("Cube9").gameObject;
 
-        this.gameObject.name = "Enemy";
+        this.gameObject.name = "Enemy2";
     }
 
     int check = 0;
     void Update()
     {
-        if (transform.position.x > -1.8)
+        if (transform.position.x > 0.07)
         {
             this.transform.Translate(new Vector3(-0.1f, 0, 0));
-            if (check == 0)
+            if(check == 0)
             {
                 asdfasdf();
                 check += 1;
@@ -77,7 +76,7 @@ public class Enemy_emergence : MonoBehaviour
         int temp = 0;
         for (int j = 0; j < RandNum.Length; j++)
         {
-            for (int k = 0; k < RandNum.Length-1; k++)
+            for (int k = 0; k < RandNum.Length - 1; k++)
             {
                 if (RandNum[k] > RandNum[k + 1])
                 {
@@ -104,7 +103,7 @@ public class Enemy_emergence : MonoBehaviour
         Debug.Log(GaTi.Checkcount);
         Debug.Log(CheckNum);
 
-        //gameManager.checkNum[0] = EnemyCre;
+        //gameManager.checkNum[0] = CheckNum;
 
         for (int i = 0; i < RandNum.Length; i++)
         {

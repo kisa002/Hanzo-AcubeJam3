@@ -24,7 +24,7 @@ public class Game_Timer : MonoBehaviour {
         Timer.text = (min + " : " + sec);
     }
 
-    IEnumerator Timer_minus()
+    public IEnumerator Timer_minus()
     {
         yield return new WaitForSeconds(1f);
         sec--;
