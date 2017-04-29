@@ -385,6 +385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5dba53b506424a4093e03f5bfef8f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EnemyPrefab: {fileID: 1812106928241598, guid: 1b8b65878fa452446bebecbac42aff7d,
+    type: 2}
   hp: 5
   score: 0
   answer: 
@@ -848,7 +850,7 @@ Prefab:
     - target: {fileID: 224716267456664964, guid: 0586893cbaa8d3944b311fdf98ff0ca3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -125
       objectReference: {fileID: 0}
     - target: {fileID: 224087164224867116, guid: 0586893cbaa8d3944b311fdf98ff0ca3,
         type: 2}
@@ -868,7 +870,7 @@ Prefab:
     - target: {fileID: 224087164224867116, guid: 0586893cbaa8d3944b311fdf98ff0ca3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -375
       objectReference: {fileID: 0}
     - target: {fileID: 224845457033205136, guid: 0586893cbaa8d3944b311fdf98ff0ca3,
         type: 2}
@@ -888,7 +890,7 @@ Prefab:
     - target: {fileID: 224845457033205136, guid: 0586893cbaa8d3944b311fdf98ff0ca3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -625
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0586893cbaa8d3944b311fdf98ff0ca3, type: 2}

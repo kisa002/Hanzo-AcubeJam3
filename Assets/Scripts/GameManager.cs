@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
 
+    public GameObject EnemyPrefab = null;
+
     public int hp = 5;
     public int score = 0;
 
@@ -50,5 +52,10 @@ public class GameManager : MonoBehaviour {
     void AnswerText()
     {
         answerText.text = answer;
+    }
+
+    public void EnemyCre()
+    {
+        Instantiate(EnemyPrefab, new Vector2(4, 2), Quaternion.identity);
     }
 }

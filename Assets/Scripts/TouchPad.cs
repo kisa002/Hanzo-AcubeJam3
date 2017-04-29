@@ -51,8 +51,12 @@ public class TouchPad : MonoBehaviour {
                 gameManager.answer = checkAnswer;
             }
 
-            if (checkAnswer.Equals(enemy.CheckNum))
+            if (checkAnswer.Equals(enemy.CheckNum)) // 몬스터 삭제!
+            {
                 GameObject.Destroy(enemy.gameObject);
+                gameManager.EnemyCre();
+            }
+                
 
             count = 0;
         }
