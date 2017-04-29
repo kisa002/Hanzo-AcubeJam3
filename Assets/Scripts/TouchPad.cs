@@ -26,11 +26,20 @@ public class TouchPad : MonoBehaviour {
 
     public void SelectItem(int item)
     {
-        count++;
-
-        if (count == 1)
+        if (count == 0)
             gameManager.answer = "";
 
+        count++;
+
+        gameManager.answer = answer;
+
+        if (count == 3)
+            count = 0;
+        //count++;
+
+        //if (count == 1)
+        //    gameManager.answer = "";
+        /*
         answer += item.ToString();
 
         if (count == 3)
@@ -41,10 +50,13 @@ public class TouchPad : MonoBehaviour {
 
             count = 0;
         }
+        
+        answer[item] = '1';
 
-        //answer[item] = '1';
+        count++;
+        */
 
-        //count++;
+
 
         //if (count == 3)
         //{
