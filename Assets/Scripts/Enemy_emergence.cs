@@ -22,8 +22,12 @@ public class Enemy_emergence : MonoBehaviour
 
     public int CheckCount = 3;
 
+    GameManager gameManager;
+
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
         Cube1 = transform.FindChild("Cube1").gameObject;
         Cube2 = transform.FindChild("Cube2").gameObject;
         Cube3 = transform.FindChild("Cube3").gameObject;
@@ -33,6 +37,8 @@ public class Enemy_emergence : MonoBehaviour
         Cube7 = transform.FindChild("Cube7").gameObject;
         Cube8 = transform.FindChild("Cube8").gameObject;
         Cube9 = transform.FindChild("Cube9").gameObject;
+
+        this.gameObject.name = "Enemy";
     }
 
     int check = 0;
@@ -94,6 +100,9 @@ public class Enemy_emergence : MonoBehaviour
         }
         temp = 0;
         Debug.Log(CheckNum);
+
+        //gameManager.checkNum[0] = CheckNum;
+
         for (int i = 0; i < RandNum.Length; i++)
         {
             if (RandNum[i] == 1)

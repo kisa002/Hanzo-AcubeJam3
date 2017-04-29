@@ -322,6 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e7b7cd523e3279488700c63588cb72b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CheckNum: 
   CheckCount: 3
 --- !u!212 &212033425315775004
 SpriteRenderer:

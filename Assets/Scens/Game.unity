@@ -390,6 +390,12 @@ MonoBehaviour:
   hp: 5
   score: 0
   answer: 
+  checkNum:
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!4 &837357586
 Transform:
   m_ObjectHideFlags: 0

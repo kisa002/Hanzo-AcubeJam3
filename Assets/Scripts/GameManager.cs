@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour {
     public int score = 0;
 
     public string answer = "";
+    public string[] checkNum = new string[5];
 
     private Text scoreText;
     private Text answerText;
