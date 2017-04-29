@@ -6,30 +6,55 @@ public class TouchPad : MonoBehaviour {
 
     GameManager gameManager;
     Enemy_emergence enemy;
+    Game_Timer gaTi;
     
     char[] answer = new char[11];
     string checkAnswer = "";
 
     int count = 0;
 
+    bool use = false;
+
 	// Use this for initialization
 	void Start () {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
-        enemy = GameObject.Find("Enemy").GetComponent<Enemy_emergence>();
+        //enemy = GameObject.Find("Enemy").GetComponent<Enemy_emergence>();
 
-        for (int i = 1; i < 10; i++)
-            answer[i] = '0';
+        //gaTi = GameObject.Find("EventSystem").GetComponent<Game_Timer>();
+
+        //for (int i = 1; i < 10; i++)
+        //    answer[i] = '0';
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (!gameManager.isRead)
+            gameStart();
 	}
+
+    void gameStart()
+    {
+        enemy = GameObject.Find("Enemy").GetComponent<Enemy_emergence>();
+
+        gaTi = GameObject.Find("EventSystem").GetComponent<Game_Timer>();
+
+        GaTi();
+
+        for (int i = 1; i < 10; i++)
+            answer[i] = '0';
+    }
+
+    IEnumerator GaTi()
+    {
+        yield return new WaitForSeconds(1f);
+
+        gaTi = GameObject.Find("EventSystem").GetComponent<Game_Timer>();
+    }
 
     public void SelectItem(int item)
     {
-        if (count == 3)
+        if (count == gaTi.Checkcount)
             count = 0;
 
         count++;
@@ -45,7 +70,7 @@ public class TouchPad : MonoBehaviour {
 
         answer[item] = '1';
 
-        if (count == 3)
+        if (count == gaTi.Checkcount)
         {
             FindEnemy();
 
@@ -59,27 +84,14 @@ public class TouchPad : MonoBehaviour {
             if(checkAnswer.Equals(enemy.CheckNum))
             {
                 GameObject.Destroy(enemy.gameObject);
+
                 gameManager.EnemyCre();
+                gameManager.ScoreUpdate();
 
                 FindEnemy();
 
                 Debug.LogError("CREATE");
             }
-
-            //for(int i=0; i<5; i++)
-            //{
-            //    if (gameManager.checkNum[i].Equals(checkAnswer)) // 몬스터 삭제!
-            //    {
-            //        GameObject.Destroy(enemy.gameObject);
-            //        gameManager.EnemyCre();
-
-            //        FindEnemy();
-
-            //        Debug.LogError("CREATE");
-
-            //        break;
-            //    }
-            //}
             count = 0;
         }
     }

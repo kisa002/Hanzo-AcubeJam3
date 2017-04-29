@@ -7,6 +7,7 @@ using System.Linq;
 
 public class Enemy_emergence : MonoBehaviour
 {
+    Game_Timer GaTi;
 
     GameObject Cube1;
     GameObject Cube2;
@@ -20,13 +21,13 @@ public class Enemy_emergence : MonoBehaviour
 
     public String CheckNum;
 
-    public int CheckCount = 3;
-
     GameManager gameManager;
 
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        GaTi = GameObject.Find("EventSystem").GetComponent<Game_Timer>();
 
         Cube1 = transform.FindChild("Cube1").gameObject;
         Cube2 = transform.FindChild("Cube2").gameObject;
@@ -55,9 +56,10 @@ public class Enemy_emergence : MonoBehaviour
         }
     }
 
+
     public void asdfasdf()
     {
-        int[] RandNum = new int[CheckCount];
+        int[] RandNum = new int[GaTi.Checkcount];
         for (int i = 0; i < RandNum.Length; i++)
         {
 
@@ -75,7 +77,7 @@ public class Enemy_emergence : MonoBehaviour
         int temp = 0;
         for (int j = 0; j < RandNum.Length; j++)
         {
-            for (int k = 0; k < 2; k++)
+            for (int k = 0; k < RandNum.Length-1; k++)
             {
                 if (RandNum[k] > RandNum[k + 1])
                 {
@@ -97,7 +99,9 @@ public class Enemy_emergence : MonoBehaviour
             else
                 CheckNum += 0;
         }
+
         temp = 0;
+        Debug.Log(GaTi.Checkcount);
         Debug.Log(CheckNum);
 
         //gameManager.checkNum[0] = CheckNum;

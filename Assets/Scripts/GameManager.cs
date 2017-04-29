@@ -7,11 +7,14 @@ public class GameManager : MonoBehaviour {
 
     public GameObject EnemyPrefab = null;
 
+    public string answer = "";
+    public string[] checkNum = new string[5];
+
     public int hp = 5;
     public int score = 0;
 
-    public string answer = "";
-    public string[] checkNum = new string[5];
+    public bool isRead = true;
+
 
     private Text scoreText;
     private Text answerText;
@@ -29,14 +32,16 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         scoreText.text = score + "점";
+	}
 
+    public void ScoreUpdate()
+    {
         AnswerText();
 
         ScoreUp(100);
 
         Dead();
-
-	}
+    }
 
     void Dead()
     {
@@ -46,8 +51,7 @@ public class GameManager : MonoBehaviour {
 
     void ScoreUp(int score)
     {
-        if (Input.GetKeyDown(KeyCode.A))
-            this.score += score;
+        this.score += score;
     }
 
     void AnswerText()
