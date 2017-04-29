@@ -9,7 +9,7 @@ public class Enemy_emergence : MonoBehaviour
 {
 
     GameObject Cube1;
-    GameObject Cube2;   
+    GameObject Cube2;
     GameObject Cube3;
     GameObject Cube4;
     GameObject Cube5;
@@ -18,7 +18,9 @@ public class Enemy_emergence : MonoBehaviour
     GameObject Cube8;
     GameObject Cube9;
 
-    private String CheckNum;
+    public String CheckNum;
+
+    public int CheckCount = 3;
 
     void Start()
     {
@@ -50,7 +52,7 @@ public class Enemy_emergence : MonoBehaviour
 
     public void asdfasdf()
     {
-        int[] RandNum = new int[3];
+        int[] RandNum = new int[CheckCount];
         for (int i = 0; i < RandNum.Length; i++)
         {
 
@@ -66,7 +68,7 @@ public class Enemy_emergence : MonoBehaviour
             }
         }
         int temp = 0;
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < RandNum.Length; j++)
         {
             for (int k = 0; k < 2; k++)
             {
@@ -83,7 +85,7 @@ public class Enemy_emergence : MonoBehaviour
         {
             if (RandNum[tempp] == i)
             {
-                if (tempp <= 1)
+                if (tempp <= RandNum.Length - 2)
                     tempp += 1;
                 CheckNum += 1;
             }
