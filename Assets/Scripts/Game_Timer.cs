@@ -6,17 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class Game_Timer : MonoBehaviour {
 
-    public Text Timer;
+    private Text Timer;
 
     public int min = 5;
     public int sec = 0;
 
     void Start ()
     {
+        Timer = GameObject.Find("Timer").GetComponent<Text>();
         StartCoroutine(Timer_minus());
     }
-	
-	// Update is called once per frame
+
 	void Update ()
     {
         Timer.text = (min + " : " + sec);
