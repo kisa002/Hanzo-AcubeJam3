@@ -29,6 +29,8 @@ public class TouchPad : MonoBehaviour {
 
     public void SelectItem(int item)
     {
+        this.gameObject.GetComponent<Renderer>().material.color = Color.red;
+
         SoundManager.Instance.PlaySFX("PadFx_1");
 
         if (count == 3)
@@ -64,24 +66,7 @@ public class TouchPad : MonoBehaviour {
                 gameManager.EnemyCre();
 
                 FindEnemy();
-
-                Debug.LogError("CREATE");
             }
-
-            //for(int i=0; i<5; i++)
-            //{
-            //    if (gameManager.checkNum[i].Equals(checkAnswer)) // 몬스터 삭제!
-            //    {
-            //        GameObject.Destroy(enemy.gameObject);
-            //        gameManager.EnemyCre();
-
-            //        FindEnemy();
-
-            //        Debug.LogError("CREATE");
-
-            //        break;
-            //    }
-            //}
             count = 0;
         }
     }
