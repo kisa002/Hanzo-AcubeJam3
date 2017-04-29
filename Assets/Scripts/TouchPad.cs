@@ -5,18 +5,16 @@ using UnityEngine;
 public class TouchPad : MonoBehaviour {
 
     GameManager gameManager;
-
-    string answer = "";
-
-    //char[] answer = new char[11];
+    
+    char[] answer = new char[11];
     int count = 0;
 
 	// Use this for initialization
 	void Start () {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
-        //for (int i = 1; i < 10; i++)
-        //    answer[i] = '0';
+        for (int i = 1; i < 10; i++)
+            answer[i] = '0';
     }
 	
 	// Update is called once per frame
@@ -26,48 +24,26 @@ public class TouchPad : MonoBehaviour {
 
     public void SelectItem(int item)
     {
-        if (count == 0)
-            gameManager.answer = "";
-
-        count++;
-
-        gameManager.answer = answer;
-
         if (count == 3)
             count = 0;
-        //count++;
+        count++;
 
-        //if (count == 1)
-        //    gameManager.answer = "";
-        /*
-        answer += item.ToString();
+        if (count == 1)
+        {
+            gameManager.answer = "";
+
+            for (int i = 1; i < 10; i++)
+                answer[i] = '0';
+        }
+
+        answer[item] = '1';
 
         if (count == 3)
         {
-            gameManager.answer = answer;
-
-            answer = "";
+            for(int i=1; i<10; i++)
+                gameManager.answer += answer[i];
 
             count = 0;
         }
-        
-        answer[item] = '1';
-
-        count++;
-        */
-
-
-
-        //if (count == 3)
-        //{
-        //    gameManager.answer = "";
-
-        //    for (int i = 1; i < 10; i++)
-        //    {
-        //        gameManager.answer += answer[i];
-        //    }
-
-        //    count = 0;
-        //}
     }
 }
