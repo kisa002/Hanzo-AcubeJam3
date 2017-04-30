@@ -1,0 +1,392 @@
+fileFormatVersion: 2
+guid: 05aef9e8fdb831c4a81763d2951c815c
+timeCreated: 1493467744
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001 Head001
+    100002: Bip001 L Calf001
+    100004: Bip001 L Clavicle001
+    100006: Bip001 L Foot001
+    100008: Bip001 L Forearm001
+    100010: Bip001 L Hand001
+    100012: Bip001 L Thigh001
+    100014: Bip001 L Toe003
+    100016: Bip001 L UpperArm001
+    100018: Bip001 Neck001
+    100020: Bip001 Pelvis001
+    100022: Bip001 R Calf001
+    100024: Bip001 R Clavicle001
+    100026: Bip001 R Foot001
+    100028: Bip001 R Forearm001
+    100030: Bip001 R Hand001
+    100032: Bip001 R Thigh001
+    100034: Bip001 R Toe003
+    100036: Bip001 R UpperArm001
+    100038: Bip001 Spine003
+    100040: Bip001 Spine004
+    100042: Bip001 Spine005
+    100044: Bip002
+    100046: Circle002
+    100048: Circle003
+    100050: Circle004
+    100052: Circle005
+    100054: Circle008
+    100056: Circle009
+    100058: Circle010
+    100060: Circle011
+    100062: IK Chain001
+    100064: IK Chain002
+    100066: IK Chain003
+    100068: IK Chain004
+    100070: NGon004
+    100072: NGon005
+    100074: NGon006
+    100076: NGon007
+    100078: NGon008
+    100080: Object001
+    100082: Player
+    100084: //RootNode
+    100086: Sphere001
+    100088: Sphere002
+    100090: Sphere003
+    400000: Bip001 Head001
+    400002: Bip001 L Calf001
+    400004: Bip001 L Clavicle001
+    400006: Bip001 L Foot001
+    400008: Bip001 L Forearm001
+    400010: Bip001 L Hand001
+    400012: Bip001 L Thigh001
+    400014: Bip001 L Toe003
+    400016: Bip001 L UpperArm001
+    400018: Bip001 Neck001
+    400020: Bip001 Pelvis001
+    400022: Bip001 R Calf001
+    400024: Bip001 R Clavicle001
+    400026: Bip001 R Foot001
+    400028: Bip001 R Forearm001
+    400030: Bip001 R Hand001
+    400032: Bip001 R Thigh001
+    400034: Bip001 R Toe003
+    400036: Bip001 R UpperArm001
+    400038: Bip001 Spine003
+    400040: Bip001 Spine004
+    400042: Bip001 Spine005
+    400044: Bip002
+    400046: Circle002
+    400048: Circle003
+    400050: Circle004
+    400052: Circle005
+    400054: Circle008
+    400056: Circle009
+    400058: Circle010
+    400060: Circle011
+    400062: IK Chain001
+    400064: IK Chain002
+    400066: IK Chain003
+    400068: IK Chain004
+    400070: NGon004
+    400072: NGon005
+    400074: NGon006
+    400076: NGon007
+    400078: NGon008
+    400080: Object001
+    400082: Player
+    400084: //RootNode
+    400086: Sphere001
+    400088: Sphere002
+    400090: Sphere003
+    2300000: Bip001 Head001
+    2300002: Bip001 L Calf001
+    2300004: Bip001 L Clavicle001
+    2300006: Bip001 L Foot001
+    2300008: Bip001 L Forearm001
+    2300010: Bip001 L Hand001
+    2300012: Bip001 L Thigh001
+    2300014: Bip001 L Toe003
+    2300016: Bip001 L UpperArm001
+    2300018: Bip001 Neck001
+    2300020: Bip001 Pelvis001
+    2300022: Bip001 R Calf001
+    2300024: Bip001 R Clavicle001
+    2300026: Bip001 R Foot001
+    2300028: Bip001 R Forearm001
+    2300030: Bip001 R Hand001
+    2300032: Bip001 R Thigh001
+    2300034: Bip001 R Toe003
+    2300036: Bip001 R UpperArm001
+    2300038: Bip001 Spine003
+    2300040: Bip001 Spine004
+    2300042: Bip001 Spine005
+    2300044: Bip002
+    2300046: Object001
+    2300048: Sphere001
+    2300050: Sphere002
+    2300052: Sphere003
+    3300000: Bip001 Head001
+    3300002: Bip001 L Calf001
+    3300004: Bip001 L Clavicle001
+    3300006: Bip001 L Foot001
+    3300008: Bip001 L Forearm001
+    3300010: Bip001 L Hand001
+    3300012: Bip001 L Thigh001
+    3300014: Bip001 L Toe003
+    3300016: Bip001 L UpperArm001
+    3300018: Bip001 Neck001
+    3300020: Bip001 Pelvis001
+    3300022: Bip001 R Calf001
+    3300024: Bip001 R Clavicle001
+    3300026: Bip001 R Foot001
+    3300028: Bip001 R Forearm001
+    3300030: Bip001 R Hand001
+    3300032: Bip001 R Thigh001
+    3300034: Bip001 R Toe003
+    3300036: Bip001 R UpperArm001
+    3300038: Bip001 Spine003
+    3300040: Bip001 Spine004
+    3300042: Bip001 Spine005
+    3300044: Bip002
+    3300046: Object001
+    3300048: Sphere001
+    3300050: Sphere002
+    3300052: Sphere003
+    4300000: Player
+    4300002: Bip002
+    4300004: Bip001 Spine003
+    4300006: Bip001 Spine004
+    4300008: Bip001 Spine005
+    4300010: Bip001 Neck001
+    4300012: Bip001 L Clavicle001
+    4300014: Bip001 L UpperArm001
+    4300016: Bip001 L Forearm001
+    4300018: Bip001 L Hand001
+    4300020: Bip001 R Clavicle001
+    4300022: Bip001 R UpperArm001
+    4300024: Bip001 R Forearm001
+    4300026: Bip001 R Hand001
+    4300028: Bip001 Head001
+    4300030: Object001
+    4300032: Sphere002
+    4300034: Sphere001
+    4300036: Sphere003
+    4300038: Bip001 Pelvis001
+    4300040: Bip001 L Thigh001
+    4300042: Bip001 L Calf001
+    4300044: Bip001 L Foot001
+    4300046: Bip001 L Toe003
+    4300048: Bip001 R Thigh001
+    4300050: Bip001 R Calf001
+    4300052: Bip001 R Foot001
+    4300054: Bip001 R Toe003
+    7400000: idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Player
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip002
+        weight: 1
+      - path: NGon008
+        weight: 1
+      - path: NGon008/Circle002
+        weight: 1
+      - path: NGon008/Circle002/Bip001 Spine003
+        weight: 1
+      - path: NGon008/Circle002/Circle003
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Bip001 Spine004
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          Head001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          Head001/Object001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          Head001/Sphere001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          Head001/Sphere002
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          Head001/Sphere003
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          L Clavicle001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          L Clavicle001/Bip001 L UpperArm001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          L Clavicle001/Bip001 L UpperArm001/Bip001 L Forearm001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          L Clavicle001/Bip001 L UpperArm001/Bip001 L Forearm001/Bip001 L Hand001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          R Clavicle001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          R Clavicle001/Bip001 R UpperArm001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          R Clavicle001/Bip001 R UpperArm001/Bip001 R Forearm001
+        weight: 1
+      - path: NGon008/Circle002/Circle003/Circle005/Bip001 Spine005/Bip001 Neck001/Bip001
+          R Clavicle001/Bip001 R UpperArm001/Bip001 R Forearm001/Bip001 R Hand001
+        weight: 1
+      - path: NGon008/Circle004
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001/Bip001 L Thigh001
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001/Bip001 L Thigh001/Bip001 L Calf001
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001/Bip001 L Thigh001/Bip001 L Calf001/Bip001
+          L Foot001
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001/Bip001 L Thigh001/Bip001 L Calf001/Bip001
+          L Foot001/Bip001 L Toe003
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001/Bip001 R Thigh001
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001/Bip001 R Thigh001/Bip001 R Calf001
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001/Bip001 R Thigh001/Bip001 R Calf001/Bip001
+          R Foot001
+        weight: 1
+      - path: NGon008/Circle004/Bip001 Pelvis001/Bip001 R Thigh001/Bip001 R Calf001/Bip001
+          R Foot001/Bip001 R Toe003
+        weight: 1
+      - path: NGon008/Circle008
+        weight: 1
+      - path: NGon008/Circle008/IK Chain004
+        weight: 1
+      - path: NGon008/Circle009
+        weight: 1
+      - path: NGon008/Circle009/IK Chain002
+        weight: 1
+      - path: NGon008/Circle010
+        weight: 1
+      - path: NGon008/Circle010/IK Chain001
+        weight: 1
+      - path: NGon008/Circle011
+        weight: 1
+      - path: NGon008/Circle011/IK Chain003
+        weight: 1
+      - path: NGon008/NGon004
+        weight: 1
+      - path: NGon008/NGon005
+        weight: 1
+      - path: NGon008/NGon006
+        weight: 1
+      - path: NGon008/NGon007
+        weight: 1
+      - path: Player
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

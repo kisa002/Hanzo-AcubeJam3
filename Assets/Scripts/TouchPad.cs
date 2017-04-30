@@ -1,111 +1,55 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class TouchPad : MonoBehaviour {
+public class TouchPad : MonoBehaviour
+{
+    public Image[] buttonImages;
 
-    GameManager gameManager;
-    Enemy_emergence enemy;
-    Enemy_emergence2 enemy2;
-    Enemy_emergence3 enemy3;
-    Game_Timer GaTi;
-    
-    char[] answer = new char[11];
-    string checkAnswer = "";
+    int[] inputs = new int[9];
 
-    int count = 0;
-
-	// Use this for initialization
-	void Start () {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-
-        enemy = GameObject.Find("Enemy").GetComponent<Enemy_emergence>();
-        enemy2 = GameObject.Find("Enemy2").GetComponent<Enemy_emergence2>();
-        enemy3 = GameObject.Find("Enemy3").GetComponent<Enemy_emergence3>();
-
-        GaTi = GameObject.Find("EventSystem").GetComponent<Game_Timer>();
-
-        for (int i = 1; i < 10; i++)
-            answer[i] = '0';
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void SelectItem(int item)
+    void Start()
     {
-        if (count == GaTi.Checkcount)
-            count = 0;
-
-        count++;
-
-        if (count == 1)
+        for (int i = 0; i < inputs.Length; i++)
         {
-            checkAnswer = "";
-            gameManager.answer = "";
-
-            for (int i = 1; i < 10; i++)
-                answer[i] = '0';
-        }
-
-        answer[item] = '1';
-
-        if (count == GaTi.Checkcount)
-        {
-            FindEnemy();
-
-            for (int i = 1; i < 10; i++)
-            {
-                //gameManager.answer += answer[i];
-                checkAnswer += answer[i];
-                gameManager.answer = checkAnswer;
-            }
-
-            if(checkAnswer.Equals(enemy.CheckNum))
-            {
-                GameObject.Destroy(enemy.gameObject);
-
-                gameManager.EnemyCre();
-                gameManager.ScoreUpdate();
-
-                FindEnemy();
-
-                Debug.LogError("CREATE");
-            }
-
-            if (checkAnswer.Equals(enemy2.CheckNum))
-            {
-                GameObject.Destroy(enemy2.gameObject);
-
-                gameManager.EnemyCre2();
-                gameManager.ScoreUpdate();
-
-                FindEnemy();
-
-                Debug.LogError("CREATE");
-            }
-
-            if (checkAnswer.Equals(enemy3.CheckNum))
-            {
-                GameObject.Destroy(enemy3.gameObject);
-
-                gameManager.EnemyCre3();
-                gameManager.ScoreUpdate();
-
-                FindEnemy();
-
-                Debug.LogError("CREATE");
-            }
-            count = 0;
+            inputs[i] = 0;
         }
     }
+    bool bStart = false;
 
-    void FindEnemy()
+    public void SetStart()
     {
-        enemy = GameObject.Find("Enemy").GetComponent<Enemy_emergence>();
-        enemy2 = GameObject.Find("Enemy2").GetComponent<Enemy_emergence2>();
-        enemy3 = GameObject.Find("Enemy3").GetComponent<Enemy_emergence3>();
+        bStart = true;
     }
+
+    //0~8까지 들어옵니다.
+    public void OnTouchPad(int _padNo)
+    {
+        //여기에 들어올때 리셋 시켰냐 안시켰냐 판별해야함.
+        //이미 눌려졌떤 버튼은 다시 못누른다.
+        if (inputs[_padNo] == 1 || !bStart) return;
+
+        buttonImages[_padNo].color = Color.red;
+
+        inputs[_padNo] = 1;
+
+        //들어올때마다 string 을 만들어서 몬스터 전체한테 쏴본다.
+        if ( GameManager.Instance.CheckHit(inputs, _padNo) )
+        {
+            ResetPattern();
+        }
+
+    }
+
+    public void ResetPattern()
+    {
+        for (int i = 0; i < inputs.Length; i++)
+        {
+            buttonImages[i].color = Color.white;
+            inputs[i] = 0;
+        }
+
+    }
+
 }

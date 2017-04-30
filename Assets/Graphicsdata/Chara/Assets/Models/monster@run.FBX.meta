@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: a67699495ecd51743a6365e38d3f0823
+timeCreated: 1493482765
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bip001 Head001
+    100002: Bip001 L Calf001
+    100004: Bip001 L Clavicle001
+    100006: Bip001 L Foot001
+    100008: Bip001 L Forearm001
+    100010: Bip001 L Hand001
+    100012: Bip001 L Thigh001
+    100014: Bip001 L Toe001
+    100016: Bip001 L UpperArm001
+    100018: Bip001 Neck003
+    100020: Bip001 Neck004
+    100022: Bip001 Neck005
+    100024: Bip001 Pelvis001
+    100026: Bip001 R Calf001
+    100028: Bip001 R Clavicle001
+    100030: Bip001 R Foot001
+    100032: Bip001 R Forearm001
+    100034: Bip001 R Hand001
+    100036: Bip001 R Thigh001
+    100038: Bip001 R Toe001
+    100040: Bip001 R UpperArm001
+    100042: Bip001 Spine001
+    100044: Bip001 Tail003
+    100046: Bip001 Tail004
+    100048: Bip001 Tail005
+    100050: Bip002
+    100052: boom
+    100054: Circle001
+    100056: Circle002
+    100058: Circle006
+    100060: Circle007
+    100062: Circle008
+    100064: Circle009
+    100066: Circle010
+    100068: Circle011
+    100070: Circle012
+    100072: Circle013
+    100074: IK Chain002
+    100076: IK Chain009
+    100078: IK Chain010
+    100080: IK Chain011
+    100082: IK Chain012
+    100084: monster
+    100086: //RootNode
+    100088: NGon001
+    100090: NGon002
+    100092: NGon003
+    100094: NGon004
+    100096: NGon006
+    400000: Bip001 Head001
+    400002: Bip001 L Calf001
+    400004: Bip001 L Clavicle001
+    400006: Bip001 L Foot001
+    400008: Bip001 L Forearm001
+    400010: Bip001 L Hand001
+    400012: Bip001 L Thigh001
+    400014: Bip001 L Toe001
+    400016: Bip001 L UpperArm001
+    400018: Bip001 Neck003
+    400020: Bip001 Neck004
+    400022: Bip001 Neck005
+    400024: Bip001 Pelvis001
+    400026: Bip001 R Calf001
+    400028: Bip001 R Clavicle001
+    400030: Bip001 R Foot001
+    400032: Bip001 R Forearm001
+    400034: Bip001 R Hand001
+    400036: Bip001 R Thigh001
+    400038: Bip001 R Toe001
+    400040: Bip001 R UpperArm001
+    400042: Bip001 Spine001
+    400044: Bip001 Tail003
+    400046: Bip001 Tail004
+    400048: Bip001 Tail005
+    400050: Bip002
+    400052: boom
+    400054: Circle001
+    400056: Circle002
+    400058: Circle006
+    400060: Circle007
+    400062: Circle008
+    400064: Circle009
+    400066: Circle010
+    400068: Circle011
+    400070: Circle012
+    400072: Circle013
+    400074: IK Chain002
+    400076: IK Chain009
+    400078: IK Chain010
+    400080: IK Chain011
+    400082: IK Chain012
+    400084: monster
+    400086: //RootNode
+    400088: NGon001
+    400090: NGon002
+    400092: NGon003
+    400094: NGon004
+    400096: NGon006
+    2300000: Bip001 Head001
+    2300002: Bip001 L Calf001
+    2300004: Bip001 L Clavicle001
+    2300006: Bip001 L Foot001
+    2300008: Bip001 L Forearm001
+    2300010: Bip001 L Hand001
+    2300012: Bip001 L Thigh001
+    2300014: Bip001 L Toe001
+    2300016: Bip001 L UpperArm001
+    2300018: Bip001 Neck003
+    2300020: Bip001 Neck004
+    2300022: Bip001 Neck005
+    2300024: Bip001 Pelvis001
+    2300026: Bip001 R Calf001
+    2300028: Bip001 R Clavicle001
+    2300030: Bip001 R Foot001
+    2300032: Bip001 R Forearm001
+    2300034: Bip001 R Hand001
+    2300036: Bip001 R Thigh001
+    2300038: Bip001 R Toe001
+    2300040: Bip001 R UpperArm001
+    2300042: Bip001 Spine001
+    2300044: Bip001 Tail003
+    2300046: Bip001 Tail004
+    2300048: Bip001 Tail005
+    2300050: Bip002
+    2300052: boom
+    2300054: Circle002
+    3300000: Bip001 Head001
+    3300002: Bip001 L Calf001
+    3300004: Bip001 L Clavicle001
+    3300006: Bip001 L Foot001
+    3300008: Bip001 L Forearm001
+    3300010: Bip001 L Hand001
+    3300012: Bip001 L Thigh001
+    3300014: Bip001 L Toe001
+    3300016: Bip001 L UpperArm001
+    3300018: Bip001 Neck003
+    3300020: Bip001 Neck004
+    3300022: Bip001 Neck005
+    3300024: Bip001 Pelvis001
+    3300026: Bip001 R Calf001
+    3300028: Bip001 R Clavicle001
+    3300030: Bip001 R Foot001
+    3300032: Bip001 R Forearm001
+    3300034: Bip001 R Hand001
+    3300036: Bip001 R Thigh001
+    3300038: Bip001 R Toe001
+    3300040: Bip001 R UpperArm001
+    3300042: Bip001 Spine001
+    3300044: Bip001 Tail003
+    3300046: Bip001 Tail004
+    3300048: Bip001 Tail005
+    3300050: Bip002
+    3300052: boom
+    3300054: Circle002
+    4300000: monster
+    4300002: Bip002
+    4300004: Circle002
+    4300006: Bip001 Pelvis001
+    4300008: Bip001 Spine001
+    4300010: Bip001 L Thigh001
+    4300012: Bip001 L Calf001
+    4300014: Bip001 L Foot001
+    4300016: Bip001 L Toe001
+    4300018: Bip001 R Thigh001
+    4300020: Bip001 R Calf001
+    4300022: Bip001 R Foot001
+    4300024: Bip001 R Toe001
+    4300026: Bip001 Neck003
+    4300028: Bip001 Neck004
+    4300030: Bip001 Neck005
+    4300032: Bip001 Head001
+    4300034: Bip001 L Clavicle001
+    4300036: Bip001 L UpperArm001
+    4300038: Bip001 L Forearm001
+    4300040: Bip001 L Hand001
+    4300042: Bip001 R Clavicle001
+    4300044: Bip001 R UpperArm001
+    4300046: Bip001 R Forearm001
+    4300048: Bip001 R Hand001
+    4300050: boom
+    4300052: Bip001 Tail004
+    4300054: Bip001 Tail003
+    4300056: Bip001 Tail005
+    7400000: run
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: monster
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 2
+    animationPositionError: 2
+    animationScaleError: 2
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: run
+      takeName: 03
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip002
+        weight: 1
+      - path: monster
+        weight: 1
+      - path: NGon001
+        weight: 1
+      - path: NGon001/Circle001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 L Thigh001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 L Thigh001/Bip001
+          L Calf001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 L Thigh001/Bip001
+          L Calf001/Bip001 L Foot001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 L Thigh001/Bip001
+          L Calf001/Bip001 L Foot001/Bip001 L Toe001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          L Clavicle001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          L Clavicle001/Bip001 L UpperArm001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          L Clavicle001/Bip001 L UpperArm001/Bip001 L Forearm001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          L Clavicle001/Bip001 L UpperArm001/Bip001 L Forearm001/Bip001 L Hand001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          Neck004
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          Neck004/Bip001 Neck005
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          Neck004/Bip001 Neck005/Bip001 Head001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          R Clavicle001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          R Clavicle001/Bip001 R UpperArm001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          R Clavicle001/Bip001 R UpperArm001/Bip001 R Forearm001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 Neck003/Bip001
+          R Clavicle001/Bip001 R UpperArm001/Bip001 R Forearm001/Bip001 R Hand001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 R Thigh001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 R Thigh001/Bip001
+          R Calf001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 R Thigh001/Bip001
+          R Calf001/Bip001 R Foot001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/Bip001 R Thigh001/Bip001
+          R Calf001/Bip001 R Foot001/Bip001 R Toe001
+        weight: 1
+      - path: NGon001/Circle001/Bip001 Pelvis001/Bip001 Spine001/boom
+        weight: 1
+      - path: NGon001/Circle002
+        weight: 1
+      - path: NGon001/Circle002/Circle008
+        weight: 1
+      - path: NGon001/Circle002/IK Chain012
+        weight: 1
+      - path: NGon001/Circle006
+        weight: 1
+      - path: NGon001/Circle006/Bip001 Tail005
+        weight: 1
+      - path: NGon001/Circle009
+        weight: 1
+      - path: NGon001/Circle009/IK Chain009
+        weight: 1
+      - path: NGon001/Circle010
+        weight: 1
+      - path: NGon001/Circle010/IK Chain002
+        weight: 1
+      - path: NGon001/Circle010/IK Chain010
+        weight: 1
+      - path: NGon001/Circle011
+        weight: 1
+      - path: NGon001/Circle011/Circle007
+        weight: 1
+      - path: NGon001/Circle011/IK Chain011
+        weight: 1
+      - path: NGon001/Circle012
+        weight: 1
+      - path: NGon001/Circle012/Bip001 Tail004
+        weight: 1
+      - path: NGon001/Circle013
+        weight: 1
+      - path: NGon001/Circle013/Bip001 Tail003
+        weight: 1
+      - path: NGon001/NGon002
+        weight: 1
+      - path: NGon001/NGon003
+        weight: 1
+      - path: NGon001/NGon004
+        weight: 1
+      - path: NGon001/NGon006
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

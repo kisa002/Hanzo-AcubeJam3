@@ -2,45 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour {
 
-    GameObject pauseMenu;
-    GameObject resultMenu;
+    public GameObject bgObject;
 
-    GameObject black;
-
-    private void OnLevelWasLoaded(int level)
-    {
-        if(level != 0)
-        {
-            //pauseMenu = transform.FindChild("PauseMenu").gameObject;
-            //resultMenu = transform.FindChild("ResultMenu").gameObject;
-        }
-    }
-
-    void Start () {
-        pauseMenu = transform.FindChild("PauseMenu").gameObject;
-        resultMenu = transform.FindChild("ResultMenu").gameObject;
-
-        black = transform.FindChild("Black").gameObject;
-    }
+    public GameObject pauseMenu;
+    public GameObject resultMenu;
+    public GameObject black;
+    public Text TimeText;
+    public Text ScoreText;
 	
-	void Update () {
-		
-	}
-
-    public void onResult()
+    public void onResult(int resultsec, int score)
     {
         black.SetActive(true);
         resultMenu.SetActive(true);
+        int min = (int)(resultsec / 60f);
+        int sec = (int)(resultsec % 60f);
+
+        TimeText.text = "" + min + "분" + " " + sec + "초";
+        ScoreText.text = score + "점";
     }
 
     public void Stop()
     {
         black.SetActive(true);
-
         pauseMenu.SetActive(true);
+
+        bgObject.SetActive(false);
         Time.timeScale = 0;
     }
 
@@ -49,34 +39,34 @@ public class Menu : MonoBehaviour {
         black.SetActive(false);
         pauseMenu.SetActive(false);
 
+        bgObject.SetActive(true);
+
         Time.timeScale = 1;
     }
 
     public void Restart()
     {
         Time.timeScale = 1;
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene("Game");
     }
 
     public void Quit()
     {
         Time.timeScale = 1;
         Application.Quit();
+        Debug.Log("Quit");
     }
 
     public void LoadMain()
     {
         Time.timeScale = 1;
-        Application.LoadLevel("Main");
+        SceneManager.LoadScene("Main");
+
     }
 
     public void GameStart()
     {
-        Application.LoadLevel("Game");
+        SceneManager.LoadScene("Game");
     }
 
-    public void LoadShop()
-    {
-        Application.LoadLevel("Shop");
-    }
 }

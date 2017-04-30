@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scens/Logo.unity
+    guid: 915464fb21b001f4191a47a414aa2e45
+  - enabled: 1
+    path: Assets/Scens/Main.unity
+    guid: 5566385871343cd4ab03ed04dc532614
+  - enabled: 1
+    path: Assets/Scens/Game.unity
+    guid: 878503b0150483c4a80c29e069e0e83e
